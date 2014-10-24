@@ -1,0 +1,33 @@
+{
+  "name": "escape-string-regexp",
+  "main": "index.js",
+  "version": "1.0.2",
+  "homepage": "https://github.com/percona/escape-string-regexp",
+  "authors": [{
+	"name": "Sindre Sorhus",
+	"email": "sindresorhus@gmail.com",
+	"url": "http://sindresorhus.com"
+  }],
+  "description": "Escape RegExp special characters",
+  "license": "MIT",
+  "keywords": [
+	"regex",
+	"regexp",
+	"re",
+	"regular",
+	"expression",
+	"escape",
+	"string",
+	"str",
+	"special",
+	"characters"
+  ],
+  "ignore": [
+	"*",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

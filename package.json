@@ -13,7 +13,7 @@
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/test.node.js"
   },
   "files": [
     "index.js"
@@ -31,6 +31,7 @@
     "characters"
   ],
   "devDependencies": {
+    "expect.js": "*",
     "mocha": "*"
   }
 }
