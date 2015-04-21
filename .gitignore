@@ -1,1 +1,14 @@
 node_modules
+
+# Emacs Swap Files
+*.#*
+[#]*[#]
+
+Vim Swap Files
+*.sw[a-z]
+*~
+
+.DS_Store
+npm-debug.log
+
+*~HEAD
