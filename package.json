@@ -1,6 +1,6 @@
 {
   "name": "escape-string-regexp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Escape RegExp special characters",
   "license": "MIT",
   "repository": "sindresorhus/escape-string-regexp",
