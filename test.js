@@ -3,5 +3,7 @@ var assert = require('assert');
 var escapeStringRegexp = require('./');
 
 it('should escape RegExp special characters', function () {
-	assert.strictEqual(escapeStringRegexp('\\ ^ $ * + ? . ( ) | { } [ ]'), '\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]');
+        console.log('asshat');
+        console.log(escapeStringRegexp('-'));
+	assert.strictEqual(escapeStringRegexp('- \\ ^ $ * + ? . ( ) | { } [ ]'), '\\- \\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]');
 });
