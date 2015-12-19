@@ -7,34 +7,35 @@
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
   "maintainers": [
-    "Sindre Sorhus <sindresorhus@gmail.com> (http://sindresorhus.com)",
-    "Joshua Appelman <jappelman@xebia.com> (http://jbnicolai.com)"
+    "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
+    "Joshua Appelman <jappelman@xebia.com> (jbnicolai.com)"
   ],
   "engines": {
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
   ],
   "keywords": [
+    "escape",
     "regex",
     "regexp",
     "re",
     "regular",
     "expression",
-    "escape",
     "string",
     "str",
     "special",
     "characters"
   ],
   "devDependencies": {
-    "mocha": "*"
+    "ava": "*",
+    "xo": "*"
   }
 }

@@ -1,7 +1,9 @@
-'use strict';
-var assert = require('assert');
-var escapeStringRegexp = require('./');
+import test from 'ava';
+import fn from './';
 
-it('should escape RegExp special characters', function () {
-	assert.strictEqual(escapeStringRegexp('\\ ^ $ * + ? . ( ) | { } [ ]'), '\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]');
+test(t => {
+	t.is(
+		fn('\\ ^ $ * + ? . ( ) | { } [ ]'),
+		'\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]'
+	);
 });
