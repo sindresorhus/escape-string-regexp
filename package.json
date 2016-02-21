@@ -11,7 +11,7 @@
   },
   "maintainers": [
     "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
-    "Joshua Appelman <jappelman@xebia.com> (jbnicolai.com)"
+    "Joshua Boy Nicolai Appelman <joshua@jbna.nl> (jbna.nl)"
   ],
   "engines": {
     "node": ">=0.8.0"
