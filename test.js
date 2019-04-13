@@ -1,9 +1,9 @@
 import test from 'ava';
-import fn from './';
+import escapeStringRegexp from '.';
 
-test(t => {
+test('main', t => {
 	t.is(
-		fn('\\ ^ $ * + ? . ( ) | { } [ ]'),
+		escapeStringRegexp('\\ ^ $ * + ? . ( ) | { } [ ]'),
 		'\\\\ \\^ \\$ \\* \\+ \\? \\. \\( \\) \\| \\{ \\} \\[ \\]'
 	);
 });
