@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save escape-string-regexp
+$ npm install escape-string-regexp
 ```
 
 
@@ -15,8 +15,8 @@ $ npm install --save escape-string-regexp
 ```js
 const escapeStringRegexp = require('escape-string-regexp');
 
-const escapedString = escapeStringRegexp('how much $ for a unicorn?');
-//=> 'how much \$ for a unicorn\?'
+const escapedString = escapeStringRegexp('how much $ for a 🦄?');
+//=> 'how much \\$ for a 🦄\\?'
 
 new RegExp(escapedString);
 ```
@@ -24,4 +24,4 @@ new RegExp(escapedString);
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
