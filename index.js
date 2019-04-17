@@ -1,6 +1,6 @@
 'use strict';
 
-const matchOperatorsRegex = /[|\\{}()[\]^$+*?.]/g;
+const matchOperatorsRegex = /[|\\{}()[\]^$+*?.-]/g;
 
 module.exports = string => {
 	if (typeof string !== 'string') {
