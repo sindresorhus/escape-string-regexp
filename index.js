@@ -1,11 +1,13 @@
 'use strict';
 
-const matchOperatorsRegex = /[|\\{}()[\]^$+*?.-]/g;
+const matchOperatorsRegex = /[|\\{}()[\]^$+*?.]/g;
 
 module.exports = string => {
 	if (typeof string !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	return string.replace(matchOperatorsRegex, '\\$&');
+	return string
+		.replace(matchOperatorsRegex, '\\$&')
+		.replace(/-/g, '\\x2d');
 };
