@@ -9,5 +9,5 @@ module.exports = string => {
 
 	return string
 		.replace(matchOperatorsRegex, '\\$&')
-		.replace(/-/g, '\\x2d');
+		.replace(/-/g, '\\u002d');
 };

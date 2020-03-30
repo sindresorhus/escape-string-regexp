@@ -11,6 +11,6 @@ test('main', t => {
 test('escapes `-`', t => {
 	t.is(
 		escapeStringRegexp('foo - bar'),
-		'foo \\x2d bar'
+		'foo \\u002d bar'
 	);
 });
