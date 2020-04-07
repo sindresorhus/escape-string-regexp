@@ -14,3 +14,10 @@ test('escapes `-`', t => {
 		'foo \\u002d bar'
 	);
 });
+
+test('escapes `-` in a way compatible with the Unicode flag', t => {
+	t.regex(
+		'-',
+		new RegExp(escapeStringRegexp('-'), 'u')
+	);
+});
