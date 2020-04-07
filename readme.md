@@ -2,13 +2,11 @@
 
 > Escape RegExp special characters
 
-
 ## Install
 
 ```
 $ npm install escape-string-regexp
 ```
-
 
 ## Usage
 
@@ -22,7 +20,6 @@ new RegExp(escapedString);
 ```
 
 You can also use this to escape a string that is inserted into the middle of a regex, for example, into a character class.
-
 
 ---
 
