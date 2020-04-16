@@ -8,10 +8,10 @@ test('main', t => {
 	);
 });
 
-test('escapes `-`', t => {
+test('escapes `-` in a way compatible with PCRE', t => {
 	t.is(
 		escapeStringRegexp('foo - bar'),
-		'foo \\u002d bar'
+		'foo \\x2d bar'
 	);
 });
 
