@@ -15,4 +15,4 @@ new RegExp(escapedString);
 */
 declare const escapeStringRegexp: (string: string) => string;
 
-export = escapeStringRegexp;
+export default escapeStringRegexp;

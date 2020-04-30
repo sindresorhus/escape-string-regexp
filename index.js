@@ -11,3 +11,5 @@ module.exports = string => {
 		.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
 		.replace(/-/g, '\\x2d');
 };
+
+module.exports.default = module.exports;
