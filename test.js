@@ -21,3 +21,10 @@ test('escapes `-` in a way compatible with the Unicode flag', t => {
 		new RegExp(escapeStringRegexp('-'), 'u')
 	);
 });
+
+test('escapes `http://`', t => {
+	t.is(
+		escapeStringRegexp('http://'),
+		String.raw`http:\/\/`
+	);
+});
