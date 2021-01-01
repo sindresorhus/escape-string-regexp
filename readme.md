@@ -1,4 +1,4 @@
-# escape-string-regexp [![Build Status](https://travis-ci.org/sindresorhus/escape-string-regexp.svg?branch=master)](https://travis-ci.org/sindresorhus/escape-string-regexp)
+# escape-string-regexp
 
 > Escape RegExp special characters
 
