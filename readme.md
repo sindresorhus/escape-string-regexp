@@ -11,7 +11,7 @@ $ npm install escape-string-regexp
 ## Usage
 
 ```js
-const escapeStringRegexp = require('escape-string-regexp');
+import escapeStringRegexp from 'escape-string-regexp';
 
 const escapedString = escapeStringRegexp('How much $ for a 🦄?');
 //=> 'How much \\$ for a 🦄\\?'

@@ -1,5 +1,5 @@
 import test from 'ava';
-import escapeStringRegexp from '.';
+import escapeStringRegexp from './index.js';
 
 test('main', t => {
 	t.is(

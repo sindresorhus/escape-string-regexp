@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = string => {
+export default function escapeStringRegexp(string) {
 	if (typeof string !== 'string') {
 		throw new TypeError('Expected a string');
 	}
@@ -10,4 +8,4 @@ module.exports = string => {
 	return string
 		.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&')
 		.replace(/-/g, '\\x2d');
-};
+}
