@@ -2,7 +2,7 @@
 
 > Escape RegExp special characters
 
-## Install
+## Install (`npm`)
 
 ```
 $ npm install escape-string-regexp
@@ -10,11 +10,22 @@ $ npm install escape-string-regexp
 
 ## Usage
 
+### Node
 ```js
 import escapeStringRegexp from 'escape-string-regexp';
 
 const escapedString = escapeStringRegexp('How much $ for a 🦄?');
-//=> 'How much \\$ for a 🦄\\?'
+// => 'How much \\$ for a 🦄\\?'
+
+new RegExp(escapedString);
+```
+
+### Deno
+```ts
+import escapeStringRegexp from 'https://raw.githubusercontent.com/sindresorhus/escape-string-regexp/main/index.js';
+
+const escapedString: string = escapeStringRegexp('How much $ for a 🦕?');
+// => 'How much \\$ for a 🦕\\?'
 
 new RegExp(escapedString);
 ```
